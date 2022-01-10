@@ -36,7 +36,7 @@ Time to create the loading script to forward the display to XSDL im doing this i
 
 SSH into PI then move to KlipperScreen folder
 ```
-cd Klipperscreen
+cd ~/KlipperScreen
 nano ./launch_klipperscreen.sh
 ```
 paste this code into your nano screen
@@ -166,3 +166,10 @@ sudo systemctl restart KlippyScreenAndroid
 ```
 Now it should be working and no matter what it will run every reboot
 
+Side Note to get working over Wi-Fi instead of USB ADB
+
+Follow all steps Skip 3 and put this code in script instead under Step 4
+```
+#!/bin/bash
+DISPLAY=(your ip from blue screen):0 /home/pi/.KlipperScreen-env/bin/python3 /home/pi/KlipperScreen/screen.py
+```
