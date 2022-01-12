@@ -12,9 +12,9 @@ Download and install XSDL and Configure.
 
   Android can use the Play Store https://play.google.com/store/apps/details?id=x.org.server&hl=en_US&gl=US
   
-  Fire Devices need to Sideload APK called x.org.server.apk listed in the data folder (uploading shortly however here is a direct download link)
+  Fire Devices need to Sideload APK called x.org.server.apk listed in the data folder (uploading shortly however here is a direct download link) This version IS required for Fire devices
   
-  https://drive.google.com/file/d/1dltCTNKp9-TAGryNla5w4smyOrpIkW8m/view?usp=sharing
+  https://sourceforge.net/projects/libsdl-android/files/apk/XServer-XSDL/XServer-XSDL-1.11.40.apk/download
   
   After Install open app Youll see SDL splash screen click “CHANGE DEVICE CONFIGURATION” 
 Click Mouse Emulation the Mouse Emulation Mode then Select Desktop, No Emulation
@@ -173,3 +173,4 @@ Follow all steps Skip 3 and put this code in script instead under Step 4
 #!/bin/bash
 DISPLAY=(your ip from blue screen):0 /home/pi/.KlipperScreen-env/bin/python3 /home/pi/KlipperScreen/screen.py
 ```
+With the Wi-Fi method you can create multiple scripts to push to separate devices however if you lose connection you'll have to restart the service to push to the devices again
