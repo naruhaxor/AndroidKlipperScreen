@@ -138,7 +138,7 @@ cd /etc/systemd/system
 ```
 now time to create file
 ```
-sudo nano ./KlippyScreenAndroid
+sudo nano ./KlippyScreenAndroid.service
 ```
 paste in nano
 ```
