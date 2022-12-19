@@ -3,7 +3,7 @@ a simple writeup /installer script to use android Devices and a UI for KlipperSc
 Thanks to JHS on the Klipper Forums for most of his code
 
 How to Use Android Device as a KlipperScreen UI Permanently over WIFI 
-** NOTE WIFI DISCONNECTS/ANDROID REBOOTS REQUIRE THE DEVICE TO BE REATTACHED VIA USB BEFORE WIFI WORKS **
+** NOTE WIFI DISCONNECTS/ANDROID REBOOTS is STILL A WORK IN PROGRESS YOU HAVE TO REPEAT the LAST part of STEP 3 until i figure it out  **
 
 **Step 1** 
 Download and install Klipper Screen Via Kiuah https://github.com/th33xitus/kiauh
