@@ -2,7 +2,7 @@
 a simple writeup /installer script to use android Devices and a UI for KlipperScreen for RaspberryPI
 Thanks to JHS on the Klipper Forums for most of his code
 
-How to Use Android Device as a KlipperScreen UI
+How to Use Android Device as a KlipperScreen UI Permanently over WIFI
 
 **Step 1** 
 Download and install Klipper Screen Via Kiuah https://github.com/th33xitus/kiauh
@@ -28,13 +28,27 @@ sudo apt-get install android-tools-adb
 ```
 Ensure device has Android Debugging enabled
 For reference look up your device and how to enable android debugging
+- FOR WIFI USAGE ENABLE WIRELESS ADB  and connect to the same WIFI network that your pi is on aka if your PI is hardwired make sure you connect to THE SAME ROUTER/NETWORK-
 
 connect android device via USB to PI
+go into your androids wifi settings to pull ip or use the blue screen fron the XSDL app to get your IP example 192.168.1.23 ONLY THESE NUMBERS do NOT put the :4713!!!
+
+```
+adb tcpip 5555
+adb connect (IP ADDRESS)
+adb shell
+```
+this is to confirm that you have wireless shell access 
+go ahead and exit shell
+verify you can see your device before the next step!!!
+```
+adb devices
+```
 
 **Step 4**
 Time to create the loading script to forward the display to XSDL im doing this in putty to ssh to my PI
 
-SSH into PI then move to KlipperScreen folder
+move to KlipperScreen folder
 ```
 cd ~/KlipperScreen
 nano ./launch_klipperscreen.sh
