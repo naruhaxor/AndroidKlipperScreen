@@ -59,6 +59,7 @@ paste this code into your nano screen
 ```
 #!/bin/bash
 # forward local display :100 to remote display :0
+adb tcpip
 adb forward tcp:6100 tcp:6000
 
 adb shell dumpsys nfc | grep 'mScreenState=' | grep OFF_LOCKED > /dev/null 2>&1
