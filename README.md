@@ -1,7 +1,7 @@
 # AndroidKlipperScreen
 a simple writeup /installer script to use android Devices and a UI for KlipperScreen for RaspberryPI
 Thanks to JHS on the Klipper Forums for most of his code
-
+** NOTE IGNORE ANY WIFI SETUP UNTIL I FINISH DEBUGGING TGE SCRIPTS**
 How to Use Android Device as a KlipperScreen UI Permanently over WIFI 
 ** NOTE WIFI DISCONNECTS/ANDROID REBOOTS is STILL A WORK IN PROGRESS YOU HAVE TO REPEAT the LAST part of STEP 3 until i figure it out  **
 
